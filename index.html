@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Project</title>
+    <link rel="stylesheet" href="dist/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./dist/style_css.css">
+    
+</head>
+<body class="bg-[#1a1b1f]">
+
+  <nav class="container mx-auto p-6 ">
+      <div class="flex justify-between">
+          <div class="w-1/8" >
+            <img src="dist/image/logo.png" alt="Logo" class="w-10" >
+          </div>
+          
+          <div class="uppercase hidden  md:flex  md:items-center  md:w-1/2">
+              <div class="md:flex justify-evenly  md:w-full   ">
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800  ">general</a>
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800  ">business</a>
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800 ">health</a>
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800 ">sports</a>
+              </div>
+              
+              <div class="relative dropdowns uppercase   w-1/6 ">
+                <div class="border-solid border-[#0b81ec]  rounded cursor-pointer  p-[2px]  text-[#0b81ec] hover:bg-[#d9d9e3] flex justify-evenly items-center  w-[120px] duration-150">
+                  country
+                  <svg class="  mr-4 h-5 w-5 text-[#0b81ec]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="hidden dropDownsMenue">
+                  <div class=" rounded  bg-[#d9d9e3]   flex flex-col gap-1  text-center  absolute  top-[40px]  w-28 ">
+                    <span class="cursor-pointer hover:bg-[#0b81ec] p-1 rounded-t duration-150 countryList" >Egypt</span>
+                    <span class="cursor-pointer hover:bg-[#0b81ec] p-1 duration-150 countryList">SUA</span>
+                    <span class="cursor-pointer hover:bg-[#0b81ec] p-1 rounded-b duration-150 countryList">Ukraine</span>
+                    <span class="cursor-pointer hover:bg-[#0b81ec] p-1 rounded-b duration-150 countryList">French</span>
+                  </div>
+              </div>
+              </div>
+              
+          </div>
+          
+          
+          
+          <div class="ml-10 md:w-1/6 flex justify-end">
+            <input type="text" placeholder="Shearch" id="shearchInp" class=" bg-[#d9d9e3]  rounded-full pl-2   outline-none  ">
+          </div>
+
+          <button class="md:hidden text-3xl text-[#d9d9e3]" id="mobileBtn"><i class="ri-menu-line"></i></button>
+          
+      </div>
+
+      <div class="hidden  mt-[12px] mobileMenu  opacity-85" >
+        <div class="absolute uppercase text-bolde flex flex-col items-center space-y-4 drop-shadow-xl duration-150 font-bold rounded-xl bg-[#1a1b1f] py-8 left-6 right-6  "  >
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800   ">general</a>
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800  ">business</a>
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800 ">health</a>
+                <a href="#" class="nav-link text-[#0b81ec] hover:text-blue-800 ">sports</a>
+                <div class="relative dropdowns uppercase ">
+                  <div class="border-solid border-[#0b81ec]  rounded cursor-pointer mx-auto   text-[#0b81ec] hover:bg-[#d9d9e3] flex justify-evenly items-center px-[10px] py-1 duration-150">
+                    country
+                    <svg class=" h-5 w-5 text-[#0b81ec]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="hidden dropDownsMenue">
+                    <div class=" rounded  bg-[#d9d9e3]   flex flex-col gap-1  text-center  absolute  top-[40px]  w-28 ">
+                      <span class="cursor-pointer hover:bg-[#0b81ec] p-1 rounded-t duration-150 countryList" >Egypt</span>
+                      <span class="cursor-pointer hover:bg-[#0b81ec] p-1 duration-150 countryList">SUA</span>
+                      <span class="cursor-pointer hover:bg-[#0b81ec] p-1 rounded-b duration-150 countryList">Ukraine</span>
+                      <span class="cursor-pointer hover:bg-[#0b81ec] p-1 rounded-b duration-150 countryList">French</span>
+                    </div>
+                </div>
+                </div>
+                
+        </div>        
+      </div>
+  </nav>
+  
+  
+  
+  <div class="">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      
+  
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 " id="newRow">
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+    <script src="dist/js/all.min.js"></script>
+    <script src="dist/js/jquery-3.7.1.min.js"></script>
+    <script src="dist/js/style_js.js"></script>
+    
+</body>
+</html>
